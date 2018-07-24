@@ -6,10 +6,19 @@ Activity to teach how to create request a code review for an existing repo.
 
 This activity will teach you how to create a code review for the master branch from an existing repo.
 
+## Usage
+This activity is meant to be completed by forking this repo to your github account and cloning your own fork.
+
 ## Steps
 
-### Step 1 - View The Commit History
+### Step 1 - Fork This Repo
+- Fork this repo to your own github account.
 
+- Clone the repo down to your computer
+
+- Navigate to the repo using the terminal
+
+### Step 2 - View The Commit History
 - Type the following command to see the complete commit history of the repo
 
 ```bash
@@ -22,7 +31,7 @@ git log
 git log --reverse
 ```
 
-You shoul see something like the following:
+You should see something like the following:
 
 ```bash
 commit 8cf0f22933906b72d4eb868f766249af408c6f7e
@@ -51,8 +60,7 @@ Date:   Tue Jul 24 14:48:21 2018 -0700
 - This is a listing of all the commits for the repo. Take note of the first commit sha hash, which for us is:
 > 8cf0f22933906b72d4eb868f766249af408c6f7e
 
-### Step 2 - Create a new based branch
-
+### Step 3 - Create a new based branch
 - Using the commit sha # we can create a new branch based from that commit. That is, we will create a branch that was the same as the master branch when that commit was created (think of it as going back in time).
 
 ```bash
@@ -91,8 +99,7 @@ README.md
 
 - This is what our repo looked like on initial commit so we've correctly created our branch.
 
-### Step 3 - Push branch to github
-
+### Step 4 - Push branch to github
 - We need this branch on github so try pushing.
 
 ```bash
@@ -116,8 +123,7 @@ git push --set-upstream origin review
 
 - The branch should now be on github
 
-### Step 4 - Check your branches on github
-
+### Step 5 - Check your branches on github
 - You should now be able to see your branches on github.
 
 ![Branches](./imgs/branches.png)
@@ -126,8 +132,7 @@ git push --set-upstream origin review
 
 ![DevFiles](./imgs/revfiles.png)
 
-### Step 5 - Add your TAs as collaborators
-
+### Step 6 - Add your TAs as collaborators
 - After you've completed the above steps you must add your TA as a collaborator
 
 ![Collab](./imgs/collab.png)
@@ -136,15 +141,13 @@ git push --set-upstream origin review
 2. Click on collaborators
 3. Type your TA's email and add them
 
-### Step 6 - Make Pull Request from review to master
-
+### Step 7 - Make Pull Request from review to master
 1. Change to dev branch in drop down.
 2. Click new pull request
 
 ![Pull](./imgs/pull.png)
 
-### Step 7 - Write Pull Request Message
-
+### Step 8 - Write Pull Request Message
 1. Write 'Code Review' in Title and Description
 
 ![msg](./imgs/msg.png)
