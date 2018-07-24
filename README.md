@@ -71,3 +71,82 @@ git branch review 8cf0f22933906b72d4eb868f766249af408c6f7e
 git branch --list
 ```
 
+- You can enter the newly created branch by typing:
+
+```bash
+git checkout review
+```
+
+- You can view the files in the branch using ls
+
+```bash
+ls
+```
+
+- You should get back the following:
+
+```bash
+README.md
+```
+
+- This is what our repo looked like on initial commit so we've correctly created our branch.
+
+### Step 3 - Push branch to github
+
+- We need this branch on github so try pushing.
+
+```bash
+git push
+```
+
+You should see the following in your terminal:
+
+```bash
+fatal: The current branch review has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin review
+```
+
+- Github doesn't know about this branch so we use the displayed command to push it up specifically.
+
+```bash
+git push --set-upstream origin review
+```
+
+- The branch should now be on github
+
+### Step 4 - Check your branches on github
+
+- You should now be able to see your branches on github.
+
+![Branches](./imgs/branches.png)
+
+- When you select review, your initial repo should come up.
+
+![DevFiles](./imgs/revfiles.png)
+
+### Step 5 - Add your TAs as collaborators
+
+- After you've completed the above steps you must add your TA as a collaborator
+
+![Collab](./imgs/collab.png)
+
+1. Click On Settings
+2. Click on collaborators
+3. Type your TA's email and add them
+
+### Step 6 - Make Pull Request from review to master
+
+1. Change to dev branch in drop down.
+2. Click new pull request
+
+![Pull](./imgs/pull.png)
+
+### Step 7 - Write Pull Request Message
+
+1. Write 'Code Review' in Title and Description
+
+![msg](./imgs/msg.png)
+
+### end
